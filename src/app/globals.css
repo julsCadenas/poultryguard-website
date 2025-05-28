@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* @import "material-symbols"; */
+@import "tailwindcss";
+
+@theme {
+  --color-customBlack: #191919;
+  --color-customWhite: #d1cfc0;
+  --color-customOrange: #f76f53;
+  --font-Montserrat: 'Montserrat';
+  --font-Poppins: 'Poppins';
+  --font-Inter: 'Inter';
+}
+
+/* @theme inline {
+  --color-background: var(--color-customBlack);
+  --color-foreground: var(--color-customWhite);
+} */
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+} */
+
+/* body {
+  background: var(--color-customBlack);
+  color: var(--color-customOrange);
+  font-family: var(--font-Montserrat), var(--font-Poppins), var(--font-Inter), sans-serif;
+} */
