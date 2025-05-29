@@ -15,7 +15,7 @@ const Navbar = () => {
 
         {/* hambuyrger icon */}
         <button
-          className='sm:hidden focus:outline-none flex items-center justify-center'
+          className='lg:hidden focus:outline-none flex items-center justify-center'
           onClick={() => setIsOpen(!isOpen)}
           aria-label='Toggle Menu'
         >
@@ -25,21 +25,23 @@ const Navbar = () => {
         </button>
 
         {/* navbar main */}
-        <div className='hidden sm:flex items-center gap-6'>
-          <ul className='flex flex-row gap-3 font-semibold text-lg'>
+        <div className='hidden lg:flex w-full items-center justify-between'>
+          <ul className='flex flex-1 justify-center gap-6 font-semibold text-lg'>
             <li><a href="/" className='hover:text-customOrange transition-all'>Introduction</a></li>
             <li><a href="/about" className='hover:text-customOrange transition-all'>Tech Stack</a></li>
             <li><a href="/contact" className='hover:text-customOrange transition-all'>About Us</a></li>
           </ul>
+
           <section className='font-semibold text-xl flex flex-row gap-2 items-center hover:text-customOrange transition-all'>
             <i className="devicon-github-original text-3xl"></i>
             <p>Source</p>
           </section>
-        </div>
+      </div>
+
       </div>
 
       {/* navbar mobile */}
-      <div className={`sm:hidden overflow-hidden transition-all duration-200 ease-in-out ${isOpen ? 'max-h-60 mt-4' : 'max-h-0'}`}>
+      <div className={`lg:hidden overflow-hidden transition-all duration-200 ease-in-out ${isOpen ? 'max-h-60 mt-4' : 'max-h-0'}`}>
         <ul className='flex flex-col gap-3 font-semibold text-lg'>
           <li><a href="/" className='hover:text-customOrange transition-all'>Introduction</a></li>
           <li><a href="/about" className='hover:text-customOrange transition-all'>Tech Stack</a></li>

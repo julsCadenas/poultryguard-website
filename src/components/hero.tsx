@@ -7,8 +7,8 @@ const Hero = () => {
       
       {/* title card */}
       <section className='flex flex-col justify-center items-center gap-2 md:gap-4'>
-          <p className='font-extrabold font-Inter text-customOrange text-5xl md:text-9xl italic' >PoultryGuard</p>
-          <p className='font-semibold text-lg md:text-4xl' >Heat Stress Monitoring for Poultry</p>
+          <p className='font-extrabold font-Inter text-customOrange text-5xl lg:text-9xl md:text-8xl italic' >PoultryGuard</p>
+          <p className='font-semibold text-lg md:text-3xl lg:text-4xl' >Heat Stress Monitoring for Poultry</p>
       </section>
 
       {/* buttons */}
@@ -16,14 +16,14 @@ const Hero = () => {
           <button className='flex flex-row items-center justify-center gap-2 bg-customWhite text-customBlack p-3 rounded-2xl text-sm md:text-lg font-semibold hover:bg-customOrange transition-all'>
             <p>View Paper</p>
             <span className="material-symbols-outlined font-semibold text-lg">
-              code
+              description
             </span>
           </button>
 
           <button className='flex flex-row items-center justify-center gap-2 bg-customWhite text-customBlack p-3 rounded-2xl text-sm md:text-lg font-semibold hover:bg-customOrange transition-all'>
             <p>Source Code</p>
             <span className="material-symbols-outlined">
-              description
+              code
             </span>
           </button>
       </section>
