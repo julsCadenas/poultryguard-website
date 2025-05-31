@@ -5,12 +5,12 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <nav className='fixed text-customWhite font-Poppins w-5/6 px-6 py-3 m-3 rounded-3xl bg-customBlack/70 backdrop-blur z-50'>
+    <nav className='fixed text-customWhite font-Poppins w-5/6 px-6 py-6 mb-3 rounded-3xl bg-customBlack/70 backdrop-blur z-50'>
       
       {/* title card */}
       <div className='flex justify-between items-center'>
         <section className='font-semibold text-2xl md:text-3xl hover:text-customOrange transition-all'>
-          <p>PoultryGuard</p>
+          <p><a href="/" className='hover:text-customOrange transition-all'>PoultryGuard</a></p>
         </section>
 
         {/* hambuyrger icon */}
@@ -27,14 +27,15 @@ const Navbar = () => {
         {/* navbar main */}
         <div className='hidden lg:flex w-full items-center justify-between'>
           <ul className='flex flex-1 justify-center gap-6 font-semibold text-lg'>
-            <li><a href="/" className='hover:text-customOrange transition-all'>Introduction</a></li>
-            <li><a href="/about" className='hover:text-customOrange transition-all'>Tech Stack</a></li>
-            <li><a href="/contact" className='hover:text-customOrange transition-all'>About Us</a></li>
+            <li><a href="/" className='hover:text-customOrange transition-all'>Home</a></li>
+            <li><a href="/tech" className='hover:text-customOrange transition-all'>Tech Stack</a></li>
+            <li><a href="/about" className='hover:text-customOrange transition-all'>About Us</a></li>
           </ul>
 
-          <section className='font-semibold text-xl flex flex-row gap-2 items-center hover:text-customOrange transition-all'>
+          <section className='font-semibold text-xl hover:text-customOrange transition-all'>
+            <a href='https://github.com/julsCadenas/PoultryGuard' target='_blank' rel='noopener noreferrer' className='flex flex-row items-center gap-2'>
             <i className="devicon-github-original text-3xl"></i>
-            <p>Source</p>
+            <p>Source</p></a>
           </section>
       </div>
 
