@@ -1,6 +1,7 @@
 'use client'
 import React, { useState } from 'react'
 
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
 
@@ -45,7 +46,7 @@ const Navbar = () => {
       <div className={`lg:hidden overflow-hidden transition-all duration-200 ease-in-out ${isOpen ? 'max-h-60 mt-4' : 'max-h-0'}`}>
         <ul className='flex flex-col gap-3 font-semibold text-lg'>
           <li><a href="/" className='hover:text-customOrange transition-all'>Introduction</a></li>
-          <li><a href="/about" className='hover:text-customOrange transition-all'>Tech Stack</a></li>
+          <li><a href="/tech" className='hover:text-customOrange transition-all'>Tech Stack</a></li>
           <li><a href="/contact" className='hover:text-customOrange transition-all'>About Us</a></li>
         </ul>
         <section className='font-semibold text-lg mt-4 flex flex-row gap-2 items-center hover:text-customOrange transition-all'>
